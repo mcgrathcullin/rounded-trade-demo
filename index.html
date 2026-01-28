@@ -4,15 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rounded Trade Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        main {
+            flex: 1;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1.5rem 2rem;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.875rem;
+            opacity: 0.8;
+        }
+    </style>
 </head>
 <body>
-    <script src="https://widget.reusely.com/v3.js"></script>
-    <div class="buyback-widget"></div>
-    <script defer>
-        new Buyback({
-            tenantId: "6ade19cf9078e7485af58c3c954095e6f1733a2e64db2c20d251b897620c089f",
-            disableFloatButton: false
-        })
-    </script>
+    <header>
+        <h1>Rounded Trade</h1>
+    </header>
+
+    <main>
+        <script src="https://widget.reusely.com/v3.js"></script>
+        <div class="buyback-widget"></div>
+        <script defer>
+            new Buyback({
+                tenantId: "6ade19cf9078e7485af58c3c954095e6f1733a2e64db2c20d251b897620c089f",
+                disableFloatButton: false
+            })
+        </script>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Rounded Trade. All rights reserved.</p>
+    </footer>
 </body>
 </html>
